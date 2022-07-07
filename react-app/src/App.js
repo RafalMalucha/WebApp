@@ -10,6 +10,7 @@ const App = () => {
   return (
     <div>
         <Navbar />
+        <AddPost />
     </div>
   )
 }
