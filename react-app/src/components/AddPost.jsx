@@ -4,7 +4,7 @@ class AddPost extends React.Component {
     render() {
         return (
             <div class='max-w-2xl mx-auto rounded-xl bg-primary'>
-                <p class='text-white mx-5 pt-5 font-semibold text-xl'>Create Post</p>
+                <p class='text-white mx-5 pt-5 font-semibold text-2xl'>Create Post</p>
                 <div class='grid grid-cols-3 gap-2'>
                     <div class='col-start-1 col-span-1 bg-slate-600 rounded-md mx-5 mt-5 mb-2'>
                         <form action="/">
