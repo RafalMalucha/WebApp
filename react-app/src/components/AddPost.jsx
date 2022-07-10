@@ -1,7 +1,6 @@
 import React from "react";
 
-class AddPost extends React.Component {
-    render() {
+const NewPost = () => {
         return (
             <div class='max-w-2xl mx-auto rounded-xl bg-primary'>
                 <p class='text-white mx-5 pt-5 font-semibold text-2xl'>Create Post</p>
@@ -21,6 +20,5 @@ class AddPost extends React.Component {
             </div>
         )
     }
-}
 
-export default AddPost;
+export default NewPost;
