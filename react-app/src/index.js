@@ -10,11 +10,6 @@ import AddNewPostPage from './routes/AddNewPostPage';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
     <BrowserRouter>
-        <Routes>
-            <Route path='/' element={<App />} />
-            <Route path='/login' element={<LoginPage />} />
-            <Route path='/register' element={<RegisterPage />} />
-            <Route path='/new' element={<AddNewPostPage />} />
-        </Routes>
+        <App />
     </BrowserRouter>,
 );

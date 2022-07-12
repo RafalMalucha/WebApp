@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const Navbar = () => {
   return (
     <div>
-        <div class='navbar fixed bg-primary top-0'>
+        <div class='navbar fixed bg-primary/75 top-0'>
             <div class='navbar-start'>
                 <svg class="svg-icon mb-1.5" viewBox="0 0 20 20">
 					<polygon fill="none" points="18.198,7.95 3.168,7.95 3.168,8.634 9.317,9.727 9.317,19.564 12.05,19.564 12.05,9.727 18.198,8.634 "></polygon>
@@ -17,7 +17,7 @@ const Navbar = () => {
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block w-5 h-5 stroke-accent"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
                     </label>
                     <ul tabindex='0' class='menu menu-compact dropdown-content mt-3 p-2 shadow bg-primary rounded-box w-52 text-accent'>
-                        <li><a class='hover:text-cyan-400'>Your Posts</a></li>
+                        <li><a class='hover:text-cyan-400'>Account</a></li>
                         <li><a class='hover:text-cyan-400'>Bruh</a></li>
                         <li><a class='hover:text-cyan-400'>Bruh 2 electric boogaloo</a></li>
                     </ul>

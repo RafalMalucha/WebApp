@@ -2,23 +2,33 @@ import React from "react";
 
 const Login = () => {
     return (
-        <div class='max-w-2xl mx-auto rounded-xl bg-primary'>
+        <div class='max-w-2xl mx-auto rounded-xl bg-primary/75'>
             <p class='text-white mx-5 pt-5 font-semibold text-xl'></p>
-            <div class='grid grid-cols-3 gap-2'>
-                <div class='col-start-1 col-end-3 bg-slate-600 rounded-md mx-5 mt-1.5 mb-2'>
-                    <form action="/">
-                        <input type="text" placeholder='e-mail..' class='input input-bordered input-sm bg-slate-400 placeholder-gray-700 w-full' />
-                    </form>
+            <form class='grid grid-cols-5 gap-2'>
+                <div class='col-start-2 col-end-5 bg-slate-600 rounded-md mx-5 mt-1.5 mb-2'>                   
+                    <input id='email'
+                    type="email" 
+                    placeholder='e-mail..' 
+                    class='input input-bordered input-sm bg-slate-400 placeholder-gray-700 w-full'
+                    required />                    
                 </div>
-                <div class='col-start-1 col-end-3 bg-slate-600 rounded-md mx-5 mt-1.5 mb-2'>
-                    <form action="/">
-                        <input type="text" placeholder='password..' class='input input-bordered input-sm bg-slate-400 placeholder-gray-700 w-full' />
-                    </form>
+                <div class='col-start-2 col-end-5 bg-slate-600 rounded-md mx-5 mt-1.5 mb-2'>
+                    <input id='password'
+                    type="password" 
+                    placeholder='password..' 
+                    class='input input-bordered input-sm bg-slate-400 placeholder-gray-700 w-full max-w-full'
+                    required />
                 </div>
-                <div class='col-start-1 col-end-4 bg-accent rounded-md mx-5 my-1.5'>
-                    <p class='text-center'><a class="btn btn-ghost normal-case text-3xl text-black text-center font-bold hover:text-cyan-400 my-1.5" href='#'>SIGN IN</a></p>
+                <div class='col-start-1 col-end-6 bg-accent rounded-md mx-5 my-1.5'>
+                    <p class='text-center'>
+                        <button type='btn btn-ghost'>
+                            <p class='normal-case text-3xl text-black text-center font-bold hover:text-cyan-400 mt-1 mb-2'>SIGN IN</p>
+                        </button>
+                    </p>
                 </div>
                 <div class='containter bg-primary h-3 ml-5'></div>
+            </form>
+            <div>
             </div>
         </div>
         )
