@@ -5,10 +5,13 @@ import Login from '../components/SignIn'
 const Main = () => {
   return (
     <>
-        <div className='bg-[url("./img/bg.jpg")] bg-cover w-full h-[1000px] bg-center'>
             <Navbar />
-            <Login />
-        </div>
+            <div class='hero min-h-screen bg-[url("./img/bg.jpg")] mx-auto w-min-full'>
+                
+            </div>
+            <div class='footer p-10 mb-[-10px] bg-accent text-black'>
+
+            </div>
     </>
   )
 }

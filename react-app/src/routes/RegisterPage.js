@@ -6,7 +6,12 @@ const RegisterPage = () => {
   return (
     <>
         <Navbar />
-        <Register />
+        <div class='hero min-h-screen bg-[url("./img/bg.jpg")] mx-auto w-min-full'>
+            <Register />
+        </div>
+        <div class='footer p-10 mb-[-10px] bg-accent text-black'>
+
+        </div>
     </>
   )
 }
