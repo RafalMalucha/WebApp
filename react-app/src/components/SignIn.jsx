@@ -12,6 +12,7 @@ const Login = () => {
         setError('')
         try {
             await signIn(email, password)
+            console.log('signed in successfully')
         } catch (e) {
             setError(e.message)
             console.log(e.message)
@@ -40,7 +41,7 @@ const Login = () => {
                 </div>
                 <div class='col-start-1 col-end-6 bg-accent rounded-md mx-5 my-1.5'>
                     <p class='text-center'>
-                        <button type='btn btn-ghost' onClick={console.log('aaa')}>
+                        <button type='btn btn-ghost'>
                             <p class='normal-case text-3xl text-black text-center font-bold hover:text-cyan-400 mt-1 mb-2'>SIGN IN</p>
                         </button>
                     </p>

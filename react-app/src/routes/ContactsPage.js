@@ -1,10 +1,10 @@
 import React from 'react'
-import Navbar from '../components/Navbar'
+import NavbarLogged from '../components/NavbarLogged'
 
 const ContactsPage = () => {
   return (
     <>  
-        <Navbar />
+        <NavbarLogged />
         <div class='hero min-h-screen bg-[url("./img/bg.jpg")] mx-auto w-min-full'>
                 
         </div>

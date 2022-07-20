@@ -4,23 +4,30 @@ import { UserAuth } from '../contexts/AuthContext';
 const Register = () => {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
+    const [checkPassword, setCheckPassword] = useState('');
     const [error, setError] = useState('');
     const { createUser } = UserAuth();
 
     const handleSubmit = async (e) => {
         e.preventDefault();
         setError('');
-        try {
-            await createUser(email, password)
-        } catch (e) {
-            setError(e.message);
-            console.log(e.message);
+        if(password === checkPassword) {
+            try {
+                await createUser(email, password)
+                console.log('user created')
+            } catch (e) {
+                setError(e.message);
+                console.log(e.message);
+            }
+        } else {
+            setError('passwords don\'t match');
+            console.log(error)
         }
     };
 
     return (
     <>
-        <div class='max-w-2xl mx-auto rounded-xl bg-primary/75'>
+        <div class='max-w-[750px] mx-auto rounded-xl bg-primary/75'>
             <p class='text-white mx-5 pt-5 font-semibold text-xl'></p>
             <form class='grid grid-cols-5 gap-2' onSubmit={handleSubmit}>
                 <div class='col-start-2 col-end-5 bg-slate-600 rounded-md mx-5 mt-1.5 mb-2'>                   
@@ -36,6 +43,14 @@ const Register = () => {
                     type="password" 
                     placeholder='password..' 
                     onChange={(e) => setPassword(e.target.value)}
+                    class='input input-bordered input-sm bg-slate-400 placeholder-gray-700 w-full max-w-full'
+                    required />
+                </div>
+                <div class='col-start-2 col-end-5 bg-slate-600 rounded-md mx-5 mt-1.5 mb-2'>
+                    <input 
+                    type="password" 
+                    placeholder='confirm password..' 
+                    onChange={(e) => setCheckPassword(e.target.value)}
                     class='input input-bordered input-sm bg-slate-400 placeholder-gray-700 w-full max-w-full'
                     required />
                 </div>
