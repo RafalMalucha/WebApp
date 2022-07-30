@@ -10,18 +10,16 @@ import ContactsPage from './routes/ContactsPage';
 
 function App() {
     return (
-        <>  
-            <div className='bg-[url("./img/bg.jpg")] bg-cover w-full h-[1000px] bg-center'>      
-                <AuthContextProvider>
-                    <Routes>
-                        <Route path='/' element={<Main />} />
-                        <Route path='/login' element={<LoginPage />} />
-                        <Route path='/register' element={<RegisterPage />} />
-                        <Route path='/new' element={<AddNewPostPage />} />
-                        <Route path='/contacts' element={<ContactsPage />} />
-                    </Routes>
-                </AuthContextProvider>
-            </div>
+        <>        
+            <AuthContextProvider>
+                <Routes>
+                    <Route path='/' element={<Main />} />
+                    <Route path='/login' element={<LoginPage />} />
+                    <Route path='/register' element={<RegisterPage />} />
+                    <Route path='/new' element={<AddNewPostPage />} />
+                    <Route path='/contacts' element={<ContactsPage />} />
+                </Routes>
+            </AuthContextProvider>
         </>
   )
 }

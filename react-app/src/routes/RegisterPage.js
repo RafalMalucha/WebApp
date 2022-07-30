@@ -1,4 +1,5 @@
 import React from 'react'
+import Footer from '../components/Footer'
 import Navbar from '../components/Navbar'
 import Register from '../components/SignUp'
 
@@ -7,9 +8,7 @@ const RegisterPage = () => {
     <>
         <Navbar />
         <Register />
-        <div class='footer p-10 mb-[-10px] bg-accent text-black'>
-
-        </div>
+        <Footer />
     </>
   )
 }
